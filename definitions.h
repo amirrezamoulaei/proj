@@ -5,6 +5,7 @@
 #include <vector>
 #include <ctime>
 #include <sstream>
+#include <stdexcept>
 
 enum class UserRole {
     CUSTOMER,
@@ -25,6 +26,30 @@ enum class Category {
     OTHER
 };
 
+class KalaNetException : public std::runtime_error {
+public:
+    explicit KalaNetException(const std::string& msg) : std::runtime_error(msg) {}
+};
+
+class AuthException : public KalaNetException {
+public:
+    explicit AuthException(const std::string& msg) : KalaNetException("Auth Error: " + msg) {}
+};
+
+class ValidationException : public KalaNetException {
+public:
+    explicit ValidationException(const std::string& msg) : KalaNetException("Validation Error: " + msg) {}
+};
+
+class WalletException : public KalaNetException {
+public:
+    explicit WalletException(const std::string& msg) : KalaNetException("Wallet Error: " + msg) {}
+};
+
+class AdException : public KalaNetException {
+public:
+    explicit AdException(const std::string& msg) : KalaNetException("Ad/Cart Error: " + msg) {}
+};
 
 struct DateTime {
     time_t rawTime;
@@ -39,4 +64,4 @@ struct DateTime {
     }
 };
 
-#endif 
+#endif  
