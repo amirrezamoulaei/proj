@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "kalanetcore.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,7 +18,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
+    KalaNetCore userManager;
+
 };
 #endif // MAINWINDOW_H
