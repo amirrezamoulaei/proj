@@ -2,6 +2,7 @@
 #include "./ui_mainwindow.h"
 #include "signupdialog.h"
 #include "logindialog.h"
+#include "homewindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -31,6 +32,11 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_pushButton_2_clicked()
 {
     LoginDialog dlg(this,&userManager);
-    dlg.exec();
+    if(dlg.exec() == QDialog::Accepted){
+        this->hide();
+
+        HomeWindow *home = new HomeWindow(nullptr,&userManager);
+        home->show();
+    }
 }
 

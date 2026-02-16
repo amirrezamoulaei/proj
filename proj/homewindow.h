@@ -1,0 +1,27 @@
+#ifndef HOMEWINDOW_H
+#define HOMEWINDOW_H
+
+#include <QMainWindow>
+#include "kalanetcore.h"
+
+namespace Ui {
+class HomeWindow;
+}
+
+class HomeWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    explicit HomeWindow(QWidget *parent = nullptr,KalaNetCore *userManager = nullptr);
+    ~HomeWindow();
+
+private slots:
+    void on_postButton_2_clicked();
+
+private:
+    Ui::HomeWindow *ui;
+    KalaNetCore *userManager;
+};
+
+#endif // HOMEWINDOW_H
