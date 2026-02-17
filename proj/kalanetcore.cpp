@@ -71,6 +71,30 @@ void KalaNetCore::signup(std::string username,
     users[username] = new User(username, passHash, name, phone, email, UserRole::CUSTOMER);
 }
 
+void KalaNetCore::editUserInfo(std::string username,
+                  std::string password,
+                  std::string name,
+                  std::string phone,
+                  std::string email)
+{
+    if (users.find(username) != users.end()) {
+        throw AuthException("Username already exists.");
+    }
+    if (password.length() < 8) {
+        throw ValidationException("Password must be at least 8 characters.");
+    }
+
+    validateEmail(email);
+    validatePhone(phone);
+
+    getLoggedInUser()->setName(name);
+    getLoggedInUser()->setEmail(email);
+    getLoggedInUser()->setPassword(generateHash(password));
+    getLoggedInUser()->setPhone(phone);
+    getLoggedInUser()->setUsername(username);
+}
+
+
 void KalaNetCore::login(std::string username, std::string password)
 {
     std::lock_guard<std::mutex> lock(dataMutex);

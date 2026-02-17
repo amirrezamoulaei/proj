@@ -36,6 +36,11 @@ public:
     void login(std::string username, std::string password);
     void logout();
     User *getLoggedInUser();
+    void editUserInfo(std::string username,
+                      std::string password,
+                      std::string name,
+                      std::string phone,
+                      std::string email);
 
     void postAd(
         std::string title, std::string desc, double price, Category cat, std::string imagePath);

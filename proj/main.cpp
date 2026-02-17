@@ -5,7 +5,10 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
+
+    KalaNetCore core;
+
+    MainWindow w(&core);
     w.show();
     return a.exec();
 }

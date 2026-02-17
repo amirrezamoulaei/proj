@@ -32,15 +32,17 @@ public:
         , price(_price)
         , category(_cat)
         , imagePath(_img)
-        , status(AdStatus::PENDING)
+        , status(AdStatus::APPROVED)
     {}
 
     std::string getId() const { return id; }
     std::string getSeller() const { return sellerUsername; }
     std::string getTitle() const { return title; }
+    std::string getDescription() const {return description;}
     double getPrice() const { return price; }
     AdStatus getStatus() const { return status; }
     std::string getImagePath() const { return imagePath; }
+    Category getCategory() const {return category;}
 
     void setStatus(AdStatus newStatus) { status = newStatus; }
 
@@ -117,6 +119,15 @@ public:
     double getBalance() const { return walletBalance; }
     UserRole getRole() const { return role; }
     std::string getFullName() const { return fullName; }
+    std::string getEmail() const {return email;}
+    std::string getPass() const {return passwordHash;}
+    std::string getPhone() const {return phoneNumber;}
+
+    void setName(std::string name){ fullName = name;}
+    void setUsername(std::string uname){ username = uname;}
+    void setPassword(std::string pass){ passwordHash = pass;}
+    void setPhone(std::string phone){ phoneNumber = phone;}
+    void setEmail(std::string semail){ email = semail;}
 
     void deposit(double amount)
     {

@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-bd2baaaf3f06b06c5fdf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "KalaNet_Server",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "KalaNet_Server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-KalaNet_Server-Debug-2f2627180f072a58808f.json",
+					"name" : "KalaNet_Server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "KalaNet_Server_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-KalaNet_Server_autogen-Debug-4c5e4f86cb899e3d9c85.json",
+					"name" : "KalaNet_Server_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "KalaNet_Server_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-KalaNet_Server_autogen_timestamp_deps-Debug-e0abbac80451fe40235c.json",
+					"name" : "KalaNet_Server_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/RSKALA.COM/Documents/KalaNet_Server/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/RSKALA.COM/Documents/KalaNet_Server"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

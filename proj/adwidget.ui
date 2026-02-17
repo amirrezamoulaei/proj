@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdWidget</class>
+ <widget class="QWidget" name="AdWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>464</width>
+    <height>432</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>90</y>
+     <width>255</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="imageLable">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>imageLable</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="titleLable">
+        <property name="text">
+         <string>titleLable</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="descLable">
+        <property name="text">
+         <string>descLable</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="priceLable">
+        <property name="text">
+         <string>priceLable</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="categoryLabel">
+        <property name="text">
+         <string>categoryLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

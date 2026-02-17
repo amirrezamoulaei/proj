@@ -19,6 +19,14 @@ public:
 private slots:
     void on_postButton_2_clicked();
 
+    void on_viewButton_clicked();
+
+    void on_exitButton_6_clicked();
+
+    void on_walletButton_4_clicked();
+
+    void on_profileButton_5_clicked();
+
 private:
     Ui::HomeWindow *ui;
     KalaNetCore *userManager;
