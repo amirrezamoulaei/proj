@@ -326,7 +326,7 @@ No specific license has been added to the repository yet.
 
 ## 👨‍💻 Author
 
-Developed by **Amir Reza Moulaei**
+Developed by **Amir Reza Moulaei** & **Mohammad Erfan Izadi**
 
 GitHub:
 https://github.com/amirrezamoulaei
